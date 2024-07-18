@@ -9,7 +9,10 @@ document.addEventListener("DOMContentLoaded", function () {
       alert("Kindly enter a task");
     } else {
       const taskItem = document.createElement("li");
-      taskItem.textContent = taskText; // Remove quotes around taskText to use the variable
+      taskItem.textContent = taskText;
+
+      // Add a class to the taskItem
+      taskItem.classList.add("task-item");
 
       const removeButton = document.createElement("button");
       removeButton.textContent = "Remove";
